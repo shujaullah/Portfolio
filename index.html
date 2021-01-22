@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper border-Line">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SHUJAULLAH AHSAN
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/Linkden.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+                <a href="https://www.linkedin.com/in/shujaullah-ahsan/">
+                    <img src="images/logos/Linkedin1.png" alt="">
+                </a>
+            </div>
+
+            <div class="subtitle">Click to visit my Linkedin profile.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/resume.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+                <a href="images/Shujaullah Ahsan Resume.pdf">
+                     <img src="images/logos/resume.png" alt="">
+                </a>
+            </div>
+
+            <div class="subtitle">Link to my resume.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/github.jpg)"></div>
+          <a href="https://github.com/shujaullah">
+            <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                <img src="images/logos/github.png" alt="">
+                </div>
+
+                <div class="subtitle">Click here to visit my github.</div>
+            </div>
+        </a>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/okqc.jpg)"></div>
+          <a href = https://github.com/shujaullah/OkQCProject>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/ai.png" alt="">
+            </div>
+
+            <div class="subtitle">Ok QC project which is based on google asistant to search courses for students Project is written in Python.</div>
+          </div>
+        </a>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/dragonland.jpg)"></div>
+          <a href="https://github.com/shujaullah/DragonBar-Java"> 
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/dragonland.jpg" alt="">
+            </div>
+
+            <div class="subtitle">Game develope using java gui and using advanced java tools.</div>
+          </div>
+          </a>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/bookstore.jpg)"></div>
+          <a href="https://github.com/shujaullah/Books-store-Coding">
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/bookstore.png" alt="">
+            </div>
+
+            <div class="subtitle">The project develop using data structure in C plus plus. Book store help user to pick the required book and 
+                make a record if rent or buy. 
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio.jpg)"></div>
+          <a href="https://github.com/shujaullah/Portfolio/tree/main/portfolio-HTML-site">
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/portfolio.jpg" alt="">
+            </div>
+
+            <div class="subtitle">Link to my personal portfolio project.</div>
+          </div>
+        </a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+    const i = document.querySelectorAll('.portfolio-item-wrapper')
+    i.forEach(i => {
+        i.addEventListener('mouseover', ()=> {
+            //console.log(i.childNodes)
+            i.childNodes[1].classList.add("img-darken")
+
+        })
+        i.addEventListener('mouseout', ()=> {
+            //console.log(i.childNodes)
+            i.childNodes[1].classList.remove("img-darken")
+
+        })
+    })   
+</script>
+
+</html>
